@@ -1,0 +1,1 @@
+modele.exports = require('./lib/swift');

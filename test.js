@@ -6,10 +6,12 @@ var swift = new Swift(
   ,  9000
 )
 
-swift.createObject('4_vm', '161026_1477412360105.wav', 'http://vcc2node2/fsresources/4/vm/161026/1477412360105.wav').catch((e)=>{
-    console.log(e.stack);
+swift.createObject('wav', '1.wav', 'http://vcc2node2/fsresources/1.wav').then(()=>{
+    console.log('done');
+}).catch((e)=>{
+    console.log(e.status, e.message);
 })
 
-/*swift.createObject('4_vm', 'README.md', './README.md').catch((e)=>{
-    console.log(e.stack);
+/*swift.createObject('wav', '1.wav', './1.wav').catch((e)=>{
+    console.log(e.status, e.message);
 })*/
